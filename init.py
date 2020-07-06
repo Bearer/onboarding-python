@@ -4,10 +4,6 @@ load_dotenv(verbose=True)
 
 import bearer_agent
 
-import logging
-logging.basicConfig()
-logging.getLogger("bearer").setLevel(logging.DEBUG)
-
 import httpx
 
 print(f"Agent version {bearer_agent.__version__}")
