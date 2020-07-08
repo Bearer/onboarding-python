@@ -33,7 +33,7 @@ pip install -r requirements.txt
 To start the application, run the following command and replace the `XXXX` with your Bearer App Key.
 
 ```bash
-BEARER_SECRET_KEY='XXXX' python demo.py
+BEARER_SECRET_KEY='XXXX' python init.py
 ```
 
 ## Viewing the results
