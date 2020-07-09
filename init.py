@@ -6,8 +6,6 @@ import bearer_agent
 
 import httpx
 
-print(f"Agent version {bearer_agent.__version__}")
-
 bearer_agent.init(
   secret_key=os.environ.get("BEARER_SECRET_KEY"),
   environment=os.environ.get("APP_ENV")
