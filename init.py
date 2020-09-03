@@ -1,4 +1,6 @@
 import os
+import time
+
 from dotenv import load_dotenv
 load_dotenv(verbose=True)
 
@@ -10,6 +12,9 @@ bearer_agent.init(
   secret_key=os.environ.get("BEARER_SECRET_KEY"),
   environment=os.environ.get("APP_ENV")
 )
+
+print("-- Waiting for initialization --")
+time.sleep(10)
 
 # Postman-echo
 print("-- Sending API calls to Postman-Echo --")
