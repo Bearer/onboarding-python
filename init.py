@@ -13,9 +13,6 @@ bearer_agent.init(
   environment=os.environ.get("APP_ENV")
 )
 
-print("-- Waiting for initialization --")
-time.sleep(10)
-
 # Postman-echo
 print("-- Sending API calls to Postman-Echo --")
 httpx.get("https://postman-echo.com/status/404",
